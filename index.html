@@ -15,9 +15,9 @@
       <div class="first-section">
         <nav>
           <div class="date">
-            <p id="day">sunday,</p>
+            <p id="day">Sunday,</p>
             <p id="date">01/</p>
-            <p id="month">june</p>
+            <p id="month">June</p>
           </div>
           <div class="icon">
             <i class="fa-solid fa-bars"></i>
@@ -25,21 +25,29 @@
         </nav>
         <h1 class="text">Currency</h1>
         <div class="input-options">
-          <input type="" id="inp-field" />
-          <select name="from_currency" id="select">
+          <input type="" id="inp-field" oninput="convertCurrency('from')" />
+          <select
+            name="from_currency"
+            id="select"
+            onchange="convertCurrency('from')"
+          >
             <option disabled>Select a Currency</option>
           </select>
         </div>
       </div>
       <div class="second-section">
         <div class="input-options2">
-          <input type="" id="inp-field2" />
-          <select name="to_currency" id="select2">
+          <input type="" id="inp-field2" oninput="convertCurrency('to')" />
+          <select
+            name="to_currency"
+            id="select2"
+            onchange="convertCurrency('to')"
+          >
             <option disabled>Select a Currency</option>
           </select>
         </div>
       </div>
     </div>
-    <script type="module" src="./asset/script/script.js"></script>
+    <script src="./asset/script/script.js"></script>
   </body>
 </html>
